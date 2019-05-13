@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+        <item
+            android:checked="true"
+            android:id="@+id/wanandroid"
+            android:checkable="true"
+            android:title="@string/WanAndroid"
+            android:icon="@drawable/select_wanandroid"/>
+        <item
+            android:id="@+id/collection"
+            android:checkable="true"
+            android:title="@string/collection"
+            android:icon="@drawable/select_collection"/>
+        <item
+            android:id="@+id/setting"
+            android:checkable="true"
+            android:title="@string/setting"
+            android:icon="@drawable/select_setting"/>
+        <item
+            android:id="@+id/about"
+            android:checkable="true"
+            android:title="@string/about"
+            android:icon="@drawable/select_about"/>
+
+</menu>

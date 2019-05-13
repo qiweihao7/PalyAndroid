@@ -1,0 +1,52 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.palyandroid.fragments.wechatFragments.WeChatFragment">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabLayou_w"
+        app:tabMode="scrollable"
+        app:tabBackground="@color/bule"
+        app:tabTextColor="@color/c_cecece7"
+        app:tabIndicatorColor="@color/white"
+        app:tabSelectedTextColor="@color/white"
+        app:tabIndicatorHeight="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <SearchView
+            android:id="@+id/et_text_w"
+            android:iconifiedByDefault="false"
+            android:layout_weight="9.5"
+            android:closeIcon="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/search"
+            android:text="@string/search"
+            android:layout_weight="0.5"
+            android:textColor="@color/white"
+            android:background="@drawable/select_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_w"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

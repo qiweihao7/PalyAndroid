@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false"
+    android:paddingTop="@dimen/dp_25"
+    android:background="@color/white"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.palyandroid.activitys.otherActivity.AboutActivity"
+    tools:showIn="@layout/activity_about">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/dp_10">
+
+        <TextView
+            android:id="@+id/aboutVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/dp_16"
+            android:drawablePadding="@dimen/dp_8"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:gravity="center"
+            android:text="@string/awesome_wan_android"
+            android:textAllCaps="false"
+            android:textColor="@color/c_cecece"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/aboutContent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp_16"
+            tools:text="@string/about_content"
+            android:textColor="@color/c_cecece" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:text="@string/large_text" />
+
+    </LinearLayout>
+
+
+</android.support.v4.widget.NestedScrollView>

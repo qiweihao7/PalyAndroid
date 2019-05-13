@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_collection"
+        android:icon="@drawable/follow"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        android:title="" />
+
+    <item
+        android:id="@+id/action_give"
+        android:icon="@mipmap/icon"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="" />
+
+
+</menu>

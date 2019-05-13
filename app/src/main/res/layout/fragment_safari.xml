@@ -1,0 +1,35 @@
+<LinearLayout
+    android:orientation="horizontal"
+    android:background="@color/c_cecece7"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.palyandroid.fragments.wechatFragments.WeChatFragment">
+
+    <q.rorbin.verticaltablayout.VerticalTabLayout
+        android:id="@+id/tab"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:fitsSystemWindows="true"
+        android:scrollIndicators="bottom"
+        app:indicator_gravity="left"
+        app:tab_height="50dp"
+        app:indicator_width="0dp"
+        app:tab_mode="scrollable"
+        tools:ignore="UnusedAttribute" />
+
+    <!-- app:indicator_corners="5dp"
+            app:indicator_color="#a41d1d"-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="4" />
+
+</LinearLayout>

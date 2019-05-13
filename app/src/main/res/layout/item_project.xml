@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:layout_margin="16dp"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true" />
+
+            <ImageView
+                android:src="@drawable/icon_project"
+                android:id="@+id/img_project"
+                android:layout_width="90dp"
+                android:layout_height="160dp"
+                android:layout_margin="10dp"
+                android:scaleType="fitXY" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignTop="@+id/img_project"
+                android:layout_toEndOf="@+id/img_project"
+                android:src="@drawable/wan" />
+
+            <TextView
+                android:id="@+id/title_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView2"
+                android:layout_toEndOf="@+id/imageView"
+                android:singleLine="true"
+                android:text="11111111"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/info_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_toEndOf="@+id/img_project"
+                android:ellipsize="end"
+                android:lines="4" />
+
+            <TextView
+                android:id="@+id/time_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/Safari"
+                android:layout_alignBottom="@+id/img_project"
+                android:layout_toEndOf="@+id/img_project"
+                android:textColor="@color/c_cecece" />
+
+            <TextView
+                android:id="@+id/anthor_project"
+                android:text="@string/home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/img_project"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/c_cecece" />
+
+        </RelativeLayout>
+
+
+        </android.support.v7.widget.CardView>
+
+</LinearLayout>

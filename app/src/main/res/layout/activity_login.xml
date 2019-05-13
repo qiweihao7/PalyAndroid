@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.palyandroid.activitys.otherActivity.LoginActivity">
+
+    <Button
+        android:id="@+id/bt_back"
+        android:background="@drawable/zjt_black"
+        android:layout_marginStart="25dp"
+        android:layout_width="30dp"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp_50"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login"
+        android:textSize="38sp" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_name"
+                android:hint="请输入用户名:"
+                android:drawablePadding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:drawableStart="@mipmap/wyonghu"
+                tools:ignore="HardcodedText,LabelFor" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/et_password"
+                android:hint="请输入密码"
+                android:password="true"
+                android:drawablePadding="15dp"
+                android:drawableLeft="@drawable/suo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                tools:ignore="HardcodedText,LabelFor,RtlHardcoded,TextFields" />
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/bt_login"
+            android:text="@string/login"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/select_button_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:text="或"
+            android:textSize="20sp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:ignore="HardcodedText" />
+
+        <Button
+            android:id="@+id/bt_regrist"
+            android:text="@string/regrist"
+            android:textColor="@color/white"
+            android:layout_margin="10dp"
+            android:background="@drawable/select_button_regrist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/bt_Um_qq"
+            android:background="@drawable/qq"
+            android:layout_marginStart="50dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/bt_Um_wx"
+            android:background="@mipmap/weixin"
+            android:layout_marginStart="45dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+        <Button
+            android:layout_marginTop="50dp"
+            android:id="@+id/bt_Um_wb"
+            android:background="@mipmap/weibo"
+            android:layout_marginStart="45dp"
+            android:textColor="@color/colorAccent"
+            android:layout_width="70dp"
+            android:layout_height="70dp" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
